@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merry Christmas 🎄</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Snow -->
+  <canvas id="snow"></canvas>
+
+  <!-- Music -->
+  <audio id="music" src="music.mp3"></audio>
+
+  <div class="container" id="card">
+    <h2 id="title">🎁 For someone special</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name 💖">
+    <button onclick="start()">Tap to Open 🎄</button>
+    <audio id="music" preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <div id="message" class="hidden">
+      <h1 class="heading">
+        <span class="emoji">🎄</span>
+        <span class="text">Merry Christmas</span>
+        <span class="emoji">🎄</span>
+      </h1>
+
+      <p id="wish"></p>
+      <span class="from">— From tanish bansal</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
